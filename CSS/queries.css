@@ -1,0 +1,388 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .hero-heading {
+    font-size: 4.4rem;
+  }
+
+  .card-img {
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-deliver {
+    justify-content: center;
+  }
+
+  .hero-img {
+    margin-bottom: 5rem;
+    width: 60%;
+  }
+
+  .hero-text {
+    padding: 0 8rem;
+  }
+
+  .fila-card {
+    grid-template-columns: 1fr;
+  }
+
+  .fila-card-img-box {
+    grid-row: 1 / 2;
+  }
+
+  .card-img {
+    padding: 3rem;
+    width: 90%;
+  }
+
+  .testimonials-box {
+    grid-template-columns: 1fr;
+  }
+
+  .outfits {
+    margin: 0 auto;
+  }
+
+  .gallery > p {
+    text-align: center;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .pricing-box {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+
+  .pricing-card {
+    height: 90rem;
+    margin: 0 7rem;
+  }
+
+  .pricing-img {
+    width: 100%;
+  }
+
+  .pricing-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .form-box {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-heading {
+    font-size: 4rem;
+  }
+
+  .form-img-container {
+    background-size: cover;
+    height: 40rem;
+    background-image: url(../IMG/Form-Img/Aso-oke-fabrics.jpg);
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  footer {
+    justify-items: center;
+  }
+
+  .footer-about > h4,
+  .subscribe > h4 {
+    font-size: 1.5rem;
+  }
+
+  /* MOBILE NAV */
+
+  .mobile-nav-btn {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(17, 56, 38, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link {
+    font-size: 3rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-nav-icon-close {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-text {
+    padding: 0 2rem;
+  }
+
+  .how-box {
+    padding: 3.6rem;
+  }
+
+  .caps,
+  .testimonials-box,
+  .gallery,
+  .pricing,
+  .features,
+  .form-section {
+    padding: 3.6rem 4.4rem;
+  }
+
+  .how-sub-heading {
+    text-align: center;
+  }
+
+  .how-heading,
+  .heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .steps-box {
+    grid-template-columns: 1fr;
+    row-gap: 5.6rem;
+  }
+
+  .steps-img-container:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .steps-img-container:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .steps-texts {
+    padding: 0;
+  }
+
+  .steps-texts > h2 {
+    font-size: 5.6rem;
+  }
+
+  .steps-texts > h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .fila-card-img-box {
+    place-items: center;
+  }
+
+  .fila-card-text-box {
+    padding: 3rem;
+  }
+
+  .card-img {
+    width: 60%;
+    padding-bottom: 0;
+  }
+
+  .caps {
+    padding: 3.6rem 1.4rem;
+  }
+
+  .fila-card-text-box > h3 {
+    text-align: center;
+    font-size: 3.6rem;
+  }
+
+  .card-fila-2 {
+    height: 90%;
+    width: 80%;
+  }
+
+  .gallery-box {
+    gap: 1rem;
+  }
+
+  .testimonial-heading {
+    padding: 0 4.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-card {
+    background-color: #113826;
+  }
+
+  .testimonial-card:nth-child(2),
+  .testimonial-card:nth-child(3),
+  .testimonial-card:nth-child(6),
+  .testimonial-card:nth-child(7) {
+    background-color: #9c7945;
+  }
+
+  .pricing {
+    padding: 3.6rem 0;
+  }
+
+  .pricing-card {
+    height: 70rem;
+  }
+
+  .pricing-box {
+    padding: 2rem 0;
+  }
+
+  .price-lists > li {
+    row-gap: 1.5rem;
+  }
+
+  .feature-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-img-container {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 462px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero-text-box {
+    padding: 4rem 2rem;
+  }
+
+  .hero-img-box {
+    padding: 6rem;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+
+  .hero-deliver {
+    gap: 2rem;
+  }
+
+  .pricing-details {
+    padding: 1rem;
+  }
+
+  .pricing-card {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .pricing-card {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-img-box {
+    padding: 0rem;
+  }
+
+  .hero-img {
+    width: 40%;
+  }
+
+  .hero-text-box {
+    gap: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* ............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................. */
+
+/* @media (max-width: 768px) { 
+  body {
+    font-size: 15px !important;
+  }  Slightly smaller for compact screens 
+  h1 {
+    font-size: 28px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  button {
+    font-size: 14px;
+    padding: 12px 16px;
+  }  Ensure easy tapping
+} */
